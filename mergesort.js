@@ -2,11 +2,12 @@ function split(arr) {
   let mid = Math.floor(arr.length / 2);
   let firstHalf = arr.slice(0, mid);
   let secondHalf = arr.slice(mid);
+  // console.log('split', firstHalf, secondHalf);
   return [firstHalf, secondHalf];
 }
 
 
-function merge(arr1, arr2) {
+function merge([arr1, arr2]) {
   let newArr = [];
   // while arr1.length
   while (arr1.length && arr2.length) {
@@ -39,10 +40,9 @@ if (array.length === 1) {
 const splitArr = split(array);
 console.log(splitArr);
 
-return merge(mergeSort(splitArr[0]), mergeSort(splitArr[1]))
+return merge([mergeSort(splitArr[0]), mergeSort(splitArr[1])])
 }
 
-const test = [3,2,4,1,5,9,100,93]
+const test = [3,2,4,1,5,9,100,93, 1]
 console.log(mergeSort(test))
 
- 
