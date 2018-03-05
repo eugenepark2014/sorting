@@ -5,7 +5,8 @@ function split(arr) {
   return [firstHalf, secondHalf];
 }
 
-function merge([arr1, arr2]) {
+
+function merge(arr1, arr2) {
   let newArr = [];
   // while arr1.length
   while (arr1.length && arr2.length) {
@@ -24,7 +25,24 @@ function merge([arr1, arr2]) {
   return newArr;
 }
 
-let arr1 = [5, 6, 7, 8];
-let arr2 = [1, 2, 3, 4];
+// let arr1 = [5, 6, 7, 8];
+// let arr2 = [1, 2, 3, 4];
 
-console.log(merge([arr1, arr2]));
+// console.log(merge([arr1, arr2]));
+
+// [1,2,5,3]
+
+function mergeSort(array) {
+if (array.length === 1) {
+    return array
+}
+const splitArr = split(array);
+console.log(splitArr);
+
+return merge(mergeSort(splitArr[0]), mergeSort(splitArr[1]))
+}
+
+const test = [3,2,4,1,5,9,100,93]
+console.log(mergeSort(test))
+
+ 

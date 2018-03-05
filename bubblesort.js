@@ -30,25 +30,25 @@ function bubbleSort(array){
   // while(check){
   // for(let i = 0;i<array.length -1;i++){
     // check = false;
-  let temp = array;
-  let counter;
-  while(counter >0){
-    counter = 0;
-    for (let i = 0; i<array.length -1; i++) {
-      if(temp[i]>temp[i+1]){
-      swap(temp, i)
-      counter++;
-      }
-    }
-  }
-    return temp;
-  }
+//   let temp = array;
+//   let counter;
+//   while(counter >0){
+//     counter = 0;
+//     for (let i = 0; i<array.length -1; i++) {
+//       if(temp[i]>temp[i+1]){
+//       swap(temp, i)
+//       counter++;
+//       }
+//     }
+//   }
+//     return temp;
+//   }
 
-function swap(arr, i){
-  const oldHold = arr[i+1];
-  arr[i+1] = arr[i]
-  arr[i] = oldHold
-}
+// function swap(arr, i){
+//   const oldHold = arr[i+1];
+//   arr[i+1] = arr[i]
+//   arr[i] = oldHold
+// }
 
-var test = [2,3,1]
-console.log(bubbleSort(test));
+// var test = [2,3,1]
+// console.log(bubbleSort(test));
