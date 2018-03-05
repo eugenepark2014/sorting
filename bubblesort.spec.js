@@ -24,4 +24,14 @@ describe('Bubble Sort', function(){
     });
   });
 
+  // beforeAll(function() {
+  //   spyOn(window, "swap").and.callThrough();
+  // });
+
+  // it("calls swap 16 times", function() {
+  //   bubbleSort(array);
+  //   bubbleSort(array2);
+  //   expect(window.swap.calls.count()).toEqual(16);
+  // });
+
   // Expected [ 2, 1, 3, 0, 99 ] to equal [ 0, 1, 2, 3, 99 ].
